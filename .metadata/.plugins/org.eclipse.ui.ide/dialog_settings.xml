@@ -34,7 +34,7 @@
 	</list>
 	<section name="ChooseWorkspaceDialogSettings">
 		<item key="DIALOG_X_ORIGIN" value="196"/>
-		<item key="DIALOG_Y_ORIGIN" value="142"/>
+		<item key="DIALOG_Y_ORIGIN" value="125"/>
 	</section>
 	<section name="WORKBENCH_SETTINGS">
 		<list key="ENABLED_TRANSFERS">
