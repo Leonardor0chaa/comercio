@@ -27,7 +27,17 @@ public class LojaController {
 		p1.setDescricao(null);
 		p1.setCod_Status(true);
 		
+		Produto p2 = new Produto();
+		p2.setId(20l);
+		p2.setNome("Teclado");
+		p2.setCodigoBarras("MA8199NQCVPI");
+		p2.setPreco(249.99);
+		p2.setDescricao(null);
+		p2.setCod_Status(true);
+		
+		
 		listaDeProdutos.add(p1);
+		listaDeProdutos.add(p2);
 		
 		model.addAttribute("listaDeProdutos", listaDeProdutos);
 		

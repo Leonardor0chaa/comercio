@@ -37,7 +37,7 @@
                             <td th:text="${produto.CodigoBarras}"></td>
                             <td th:text="${produto.preco}"></td>
                             <td th:text="${produto.descricao}"></td>
-                            <td th:text="${produto.Cod_Status}"></td>
+                            <td th:text="${produto.Cod_Status} ? 'Ativo' : 'Inativo'"></td>
                             <td>
                                 <a href="#">Editar</a>
                             </td>
