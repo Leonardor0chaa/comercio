@@ -21,7 +21,7 @@ public class LojaController {
 
 		Produto p1 = new Produto();
 		p1.setId (20l);
-		p1.setNome("Mouse");
+		p1.setNome("Monitor");
 		p1.setCodigoBarras("ADB2PWQZ19NM");
 		p1.setPreco(299.99);
 		p1.setDescricao(null);
@@ -29,7 +29,7 @@ public class LojaController {
 		
 		Produto p2 = new Produto();
 		p2.setId(20l);
-		p2.setNome("Teclado");
+		p2.setNome("Gabinete");
 		p2.setCodigoBarras("MA8199NQCVPI");
 		p2.setPreco(249.99);
 		p2.setDescricao(null);
