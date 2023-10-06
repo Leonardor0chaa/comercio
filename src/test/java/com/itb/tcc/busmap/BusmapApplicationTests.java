@@ -1,10 +1,10 @@
-package com.itb.inf2dm.comercio;
+package com.itb.tcc.busmap;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ComercioApplicationTests {
+public class BusmapApplicationTests {
 
 	@Test
 	void contextLoads() {

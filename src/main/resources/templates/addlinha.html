@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AddLinha</title>
+    <link rel="stylesheet" href="addl.css">
+</head>
+<body>
+    <header>Cadastrar Linha</header>
+    <form class="form" method="post" th:action="@{/busmap/linha/addlinha}" th:object="${linha}">
+    
+        <label for="nome">Nome</label>
+        <input type="text" th:field="*{nome}" placeholder="Insira seu nome" size="20" required>
+
+        <label for="empresa">Empresa</label>
+        <input type="text" th:field="*{empresa}" placeholder="Insira o nome da empresa"size="25" required>
+
+        <label for="empresa">Nome_ida</label>
+        <input type="text" th:field="*{nomeIda}" placeholder="Insira o nome de ida" size="25" required>
+        <br>
+
+        
+        <label for="empresa">Tarifas</label>
+        <input type="text" th:field="*{tarifas}" placeholder="Insira o valor da tarifa" size="25" required>
+
+        <label for="empresa">Nome_volta</label>
+        <input type="text" th:field="*{nomeVolta}" placeholder="Insira o nome da empresa" size="25" required>
+        
+        <button type="submit"> Cadastrar </button>
+        <button type="submit"> Alterar </button>
+    </form>
+</body>
+</html>
