@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/Css/addlinharua.css">
+    <title>Adicionar Linha/Rua</title>
+</head>
+</label>
+<body>
+	<header>Adicionar Linha/Pontos</header>
+    <input type="checkbox" id="chec">
+    <label for="chec">
+        <img src="/Img/menu.png">
+    </label>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Adicionar rota</a></li>
+            <li><a href="#">Editar ADM´S</a></li>
+            <li><a href="#">Perfil</a></li>
+        </ul>
+    </nav>
+
+    <div class="campo-pesquisa">
+        <label for="pesquisa">Pesquisar:</label>
+        <input type="text" id="pesquisa" name="pesquisa">
+    </div>
+</br>
+</br>
+
+    <div class="links">
+        <a href="nova-linha">Adicionar Linha</a> &nbsp; &nbsp; &nbsp; &nbsp;
+        <a href="frmlinha.html">Adicionar Rua</a>
+    </div>
+    
+    <h2> Linhas</h2>
+    <table class="tabela">
+        <tr th:each="linha : ${arrayLinhas}">
+            <td th:text="${linha.nome}"></td>
+            <td th:text="${linha.nomeIda}"></td>
+            <td th:text="${linha.nomeVolta}"></td>
+            <td th:text="${linha.empresa}"></td>
+            <td th:text="${linha.tarifas}"></td>
+            
+          <td class="hov"> <a th:href="@{/busmap/linha/editar-linha/{id}(id=${linha.id})}">Editar</a></td>
+          <td class="hov"> <a th:href="@{/busmap/linha/excluir-linha/{id}(id=${linha.id})}">Excluir</a></td>
+          
+        </tr>
+	
+    </table>
+     <h2> Ruas</h2>
+    <table class="tabela">
+        <tr>
+            <td>011</td>
+            <td>Bariloche</td>
+        </tr>
+        <tr>
+            <td>002</td>
+            <td>Rua da Prata</td>
+        </tr>
+      
+    </table>
+</body>
+</html>
